@@ -57,3 +57,13 @@ public class A
         System.out.println(z);
     }
 }
+//7.
+public class A
+{
+    public static void main(String []args)
+    {
+       int x=3;
+       int y=(2*x)+5;
+       System.out.println(y);
+    }
+}
