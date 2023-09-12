@@ -20,3 +20,12 @@ public class A
        System.out.println(x+"   "+y);
     }
 }
+//
+public class A
+{
+    public static void main(String []args)
+    {
+       char let1='E',let2='y',let3='a',let4='l';
+       System.out.println(""+let1+let2+let3+let4);
+    }
+}
