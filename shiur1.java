@@ -38,3 +38,12 @@ public class A
        System.out.println(x+" is less than "+y);
     }
 }
+//5.
+public class A
+{
+    public static void main(String []args)
+    {
+       float x=3, y=6, z=10;
+       System.out.println((x+y+z)/3);
+    }
+}
