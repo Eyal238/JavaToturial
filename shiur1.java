@@ -47,3 +47,13 @@ public class A
        System.out.println((x+y+z)/3);
     }
 }
+//6.
+public class A
+{
+    public static void main(String []args)
+    {
+        int x=4,y=3,z;
+        z=((x*x)+(y*y));
+        System.out.println(z);
+    }
+}
