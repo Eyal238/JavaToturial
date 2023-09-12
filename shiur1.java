@@ -29,3 +29,12 @@ public class A
        System.out.println(""+let1+let2+let3+let4);
     }
 }
+//4.
+public class A
+{
+    public static void main(String []args)
+    {
+       int x=3, y=6;
+       System.out.println(x+" is less than "+y);
+    }
+}
