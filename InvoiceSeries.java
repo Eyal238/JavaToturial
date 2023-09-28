@@ -19,11 +19,12 @@ public class InvoiceSeries
         a=firstMember+((n-1)*difference);
         return a;
     }
-    public float calculateN(int an)
+    public double calculateN(int an)
     {
-        float n;
-        n=((an-firstMember+difference)/difference);
-        if(n%1==0)
+        double n;
+        n=((double)(an-firstMember+difference)/difference);
+        int n1=(int)n;
+        if(n-n1==0)
            return n;
         else
            return 0;
