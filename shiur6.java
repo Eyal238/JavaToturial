@@ -15,6 +15,7 @@ public void f2()
    }
    System.out.println(count);
 }
+// 4. 
 public void f4()
 {
     boolean ans=false;
