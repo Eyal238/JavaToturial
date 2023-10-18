@@ -34,3 +34,19 @@ public void f4()
     }
     System.out.println(ans);
 }
+// 6.
+public void f6()
+    {
+        for(int i=1;i<=10;i++)
+        {
+            for(int j=1;j<=10;j++)
+            {
+                if(i*j<10)
+                    System.out.print(i * j + "  ");
+                else
+                    System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+    }
+
