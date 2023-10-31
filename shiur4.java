@@ -5,7 +5,7 @@ public class A
     public static void main(String []args)
     {
         Scanner scan=new Scanner(System.in);
-        System.out.println("please enter 3 numbers:");
+        System.out.println("please enter 3 names:");
         String num1=scan.next();
         String num2=scan.next();
         String num3=scan.next();
