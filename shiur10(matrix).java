@@ -16,6 +16,7 @@ public void f1(int rows,int columns)
             System.out.println();
         }
 }
+//2.
 public void f2(int rows,int columns)
 {
         Scanner scan=new Scanner(System.in);
