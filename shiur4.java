@@ -28,3 +28,15 @@ public class A
                                 System.out.println(num3+","+num2+","+num1);
     }
 }
+//2.
+import java.util.Scanner;
+public class YudAlef
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter String:");
+        String str=scan.nextLine();
+        System.out.println(str.length()-3);
+    }
+}
