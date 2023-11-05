@@ -44,3 +44,41 @@ public void f2()
         }
         System.out.println(maxLine);
 }
+//3.
+public void f3(int rows,int columns)
+{
+        Random r=new Random();
+        int[][] arr1=new int[rows][columns];
+        int[][] arr2=new int[rows][columns];
+        int[][] arr3=new int[rows][columns];
+        int i,j;
+        for(i=0;i<arr1.length;i++)
+        {
+            for(j=0;j<arr1[i].length;j++)
+            {
+                arr1[i][j] = r.nextInt(101);
+                arr2[i][j] = r.nextInt(101);
+                arr3[i][j]= arr1[i][j]+arr2[i][j];
+            }
+        }
+        for(i=0;i<arr1.length;i++)
+        {
+            for(j=0;j<arr1[i].length;j++)
+                System.out.print(arr1[i][j]+" ");
+            System.out.println();
+        }
+        System.out.println();
+        for(i=0;i<arr2.length;i++)
+        {
+            for(j=0;j<arr2[i].length;j++)
+                System.out.print(arr2[i][j]+" ");
+            System.out.println();
+        }
+        System.out.println();
+        for(i=0;i<arr3.length;i++)
+        {
+            for(j=0;j<arr3[i].length;j++)
+                System.out.print(arr3[i][j]+" ");
+            System.out.println();
+        }
+}
