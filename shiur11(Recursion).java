@@ -8,7 +8,7 @@ public void f1(int num)
 }
 public void f2(int num)
 {
-    if (num >= 1)
+    if (num >0)
     {
         f2(num - 1);
         System.out.print(num+" ");
