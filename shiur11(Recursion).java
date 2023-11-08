@@ -14,3 +14,12 @@ public void f2(int num)
         System.out.print(num+" ");
     }
 }
+public int f3(int x,int n)
+{
+    int ans;
+    if(n>0)
+       ans=x*f3(x,n-1);
+    else
+       ans=1;
+    return ans;
+}
