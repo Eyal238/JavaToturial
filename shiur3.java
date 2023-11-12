@@ -1,4 +1,27 @@
-//4.
+//3.
+public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter player1:");
+        String player1=scan.next();
+        System.out.println("enter player2:");
+        String player2=scan.next();
+        System.out.println("enter x:");
+        int x1=scan.nextInt();
+        System.out.println("enter x2:");
+        int x2=scan.nextInt();
+        System.out.println("enter v1:");
+        int v1=scan.nextInt();
+        System.out.println("enter v2:");
+        int v2=scan.nextInt();
+        double t1=(x1/v1);
+        double t2=(x2/v2);
+        if(t1<=t2)
+            System.out.println(player1);
+        else
+            System.out.println(player2);
+    }
+//8.
 import java.util.Scanner;
 public class A
 {
