@@ -14,7 +14,7 @@ public void f2(int num)
         System.out.print(num+" ");
     }
 }
-public int f3(int x,int n)
+public long f3(int x,int n)
 {
     int ans;
     if(n>0)
@@ -22,4 +22,18 @@ public int f3(int x,int n)
     else
        ans=1;
     return ans;
+}
+// ניתן לכתוב את שאלה 3 באופן יותר אפקטיבי על ידי תזכורת של חוקי חזקות
+public long f3Efec(int a,int n)
+{
+        long temp=0;
+        if(n==0)
+            return 1;
+        else
+            temp=f3Efec(a,n/2);
+            if(n%2==0)
+                return (temp*temp);
+            else
+                return (a*temp*temp);
+
 }
