@@ -3,17 +3,19 @@ public class ArithmeticProgression
 {
     private int firstMember;
     private int difference;
-
+    // בנאי
     public ArithmeticProgression(int fM,int diff)
     {
         firstMember=fM;
         difference=diff;
     }
+    // בנאי העתקה
     public ArithmeticProgression(ArithmeticProgression other)
     {
         firstMember= other.firstMember;
         difference=other.difference;
     }
+    //
     public void printGeneralSeries()
     {
         System.out.println("a(n)="+firstMember+"+"+"(n-1)"+"*"+difference);
