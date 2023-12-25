@@ -37,3 +37,11 @@ public long f3Efec(int a,int n)
                 return (a*temp*temp);
 
 }
+//7.
+public int lengthNum(int num)
+{
+    if(num==0)
+         return 0;
+    else
+         return (1+lengthNum(num/10));
+}
