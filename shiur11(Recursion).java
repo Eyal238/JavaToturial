@@ -56,12 +56,12 @@ public int recEvenDigits(int num)
        return recEvenDigits(num/10);
 }
 //6.
-public int recEvenDigits(int num)
+public int recMaxDigits(int num)
 {
-  if(num==0)
-      return 0;
-  else
-      if(num%2==0)
-           return (1+recEvenDigits(num/10));
-      return recEvenDigits(num/10);
-}
+   if(num<10)
+       return num;
+   int max=recMaxDigits(num/10);
+   if(max>num%10)
+       return max;
+   return num%10;
+ }
