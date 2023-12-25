@@ -45,3 +45,4 @@ public int lengthNum(int num)
     else
          return (1+lengthNum(num/10));
 }
+// 4. 
