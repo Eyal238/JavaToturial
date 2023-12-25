@@ -46,3 +46,12 @@ public int lengthNum(int num)
          return (1+lengthNum(num/10));
 }
 // 5. 
+public int recEvenDigits(int num)
+{
+   if(num==0)
+       return 0;
+   else
+       if(num%2==0)
+           return (1+recEvenDigits(num/10));
+       return recEvenDigits(num/10);
+}
