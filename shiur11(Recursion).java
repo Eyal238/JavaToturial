@@ -37,7 +37,7 @@ public long f3Efec(int a,int n)
                 return (a*temp*temp);
 
 }
-//7.
+//4.
 public int lengthNum(int num)
 {
     if(num==0)
@@ -45,4 +45,4 @@ public int lengthNum(int num)
     else
          return (1+lengthNum(num/10));
 }
-// 4. 
+// 5. 
