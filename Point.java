@@ -44,4 +44,8 @@ public class Point
         else
             return false;
     }
+    public double distance(Point p)
+    {
+        return (Math.sqrt(Math.pow((_x-p._x),2)+Math.pow((_y-p._y),2)));
+    }
 }
