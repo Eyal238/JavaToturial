@@ -33,6 +33,10 @@ public class Point
         _x=_x+deltaX;
         _y=_y+deltaY;
     }
+    public String toString()
+    {
+        return ("(" + _x + "," + _y + ")"+" ");
+    }
     public void printStatus()
     {
         System.out.println("("+_x+","+_y+")");
