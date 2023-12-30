@@ -1,10 +1,8 @@
-public class Circle 
-{
+public class Circle {
     private double _radius;
     private Point _center;
 
-    public Circle(int x, int y, double radius) 
-    {
+    public Circle(int x, int y, double radius) {
         _center = new Point(x, y);
         if (radius > 0)
             _radius = radius;
@@ -12,46 +10,38 @@ public class Circle
             _radius = 1;
     }
 
-    public Circle(Point center, double radius) 
-    {
+    public Circle(Point center, double radius) {
         _center = new Point(center); //copy constructor
         if (radius > 0)
             _radius = radius;
     }
 
-    public Circle(Circle other) 
-    {
+    public Circle(Circle other) {
         _center = new Point(other._center);
         _radius = other._radius;
     }
 
-    public Point getCenter() 
-    {
+    public Point getCenter() {
         return new Point(_center);
     }
 
-    public double getRadius() 
-    {
+    public double getRadius() {
         return _radius;
     }
 
-    public void setCenter(Point center) 
-    {
+    public void setCenter(Point center) {
         _center = new Point(center);
     }
 
-    public void setRadius(double radius) 
-    {
+    public void setRadius(double radius) {
         _radius = radius;
     }
 
-    public double primeter() 
-    {
+    public double primeter() {
         return (2 * Math.PI * _radius);
     }
 
-    public double area() 
-    {
+    public double area() {
         return (Math.PI * Math.pow(_radius, 2));
     }
 
@@ -71,5 +61,16 @@ public class Circle
         if(this.area()>other.area())
             return true;
         else return false;
+    }
+    public boolean isInCircle(Point p)
+    {
+        if(_center.distance(p)<=_radius)
+            return true;
+        else
+            return false;
+    }
+    public String toString()
+    {
+        return ("The center of the circle="+_center+"and the radius="+_radius);
     }
 }
