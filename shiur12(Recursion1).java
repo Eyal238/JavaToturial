@@ -65,7 +65,7 @@ public int recMaxDigits(int num)
        return max;
    return num%10;
  }
-
+//7.
 public int f7(int num,int factor)
 {
     if(factor==num)
