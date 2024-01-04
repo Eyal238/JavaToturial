@@ -65,3 +65,16 @@ public int recMaxDigits(int num)
        return max;
    return num%10;
  }
+
+public int f7(int num,int factor)
+{
+    if(factor==num)
+        return factor;
+    if(num%factor==0)
+    {
+        System.out.print(factor+" , ");
+        return  f7(num / factor, factor);
+    }
+    else
+        return f7(num,factor+1);
+}
