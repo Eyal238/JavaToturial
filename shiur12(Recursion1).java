@@ -78,3 +78,13 @@ public int f7(int num,int factor)
     else
         return f7(num,factor+1);
 }
+//10.
+public boolean secret1(int num,int digit)
+{
+   if(num<10)
+      if(num%2==digit%2)
+         return true;
+      if(num%2!=digit%2)
+         return false;
+      return secret1(num/10,digit);
+}
