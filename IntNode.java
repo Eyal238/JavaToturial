@@ -1,32 +1,35 @@
 public class IntNode
 {
-    private int _value;
-    private IntNode _next;
+    private int value;
+    private IntNode next;
     public IntNode(int val)
     {
-        _value=val;
-        _next=null;
+        this.value=val;
+        this.next=null;
     }
     public IntNode(int val,IntNode next)
     {
-        _value=val;
-        _next=next;
+        this.value=val;
+        this.next=next;
     }
     public int getValue()
     {
-        return _value;
+        return value;
     }
     public void setValue(int v)
     {
-        _value=v;
+        value=v;
     }
     public IntNode getNext()
     {
-        return _next;
+        return next;
     }
     public void setNext(IntNode node)
     {
-        _next=node;
+        next=node;
+    }
+    public String toString()
+    {
+        return (value+"-->"+next);
     }
 }
-
