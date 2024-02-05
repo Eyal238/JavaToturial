@@ -49,4 +49,17 @@ public void f6()
             System.out.println();
         }
     }
-
+//8.
+public boolean f8(int num)
+{
+     int a=1;
+     int b=1;
+     while(a<=num)
+     {
+         if((a==num)||(b==num))
+             return true;
+         a=a+b;
+         b=a+b;
+     }
+     return false;
+}
