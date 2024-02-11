@@ -15,6 +15,20 @@ public void f2()
    }
    System.out.println(count);
 }
+//2/ do..while
+public static void f2()
+{
+       Scanner scan=new Scanner(System.in);
+       int count=0;
+       String str;
+       do
+       {
+           System.out.println("Enter String:");
+           str=scan.next();
+           count++;
+       }while(!(str.equals("enter")));
+       System.out.println(count);
+}
 // 4. 
 public void f4()
 {
