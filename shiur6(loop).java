@@ -77,3 +77,24 @@ public boolean f8(int num)
      }
      return false;
 }
+//14.  טרפז שווה שוקיים של כוכביות
+public void f14(int height)
+{
+        int i,j;
+        int base=(height*2)+1;
+        int x1=(base/2)-1;
+        int x2=(base/2)+1;
+        for(i=0;i<height;i++)
+        {
+            for(j=0;j<base;j++)
+            {
+                if(j>=x1&&j<=x2)
+                    System.out.print(" * ");
+                else
+                    System.out.print("   ");
+            }
+            x1 = x1 - 1;
+            x2 = x2 + 1;
+            System.out.println();
+        }
+}
