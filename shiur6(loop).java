@@ -98,3 +98,16 @@ public void f14(int height)
             System.out.println();
         }
 }
+// 18. מעבר של מספר בבסיס עשרוני לבינארי
+public String f18(int num)
+{
+        String totalBinary="";
+        int lastDigit;
+        while(num>0)
+        {
+            lastDigit=num%10;
+            totalBinary=String.valueOf(lastDigit%2)+totalBinary;
+            num=num/2;
+        }
+        return totalBinary;
+}
