@@ -11,6 +11,22 @@ public void f1(int[] arr,int index)
      else
          System.out.println("Error!");
 }
+//2.
+public void f2()
+{
+        int[] arr=new int[5];
+        int sum=0;
+        double avg;
+        Scanner scan=new Scanner(System.in);
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.println("Enter grade:");
+            int grade=scan.nextInt();
+            sum+=grade;
+        }
+        avg=(double)(sum/5);
+        System.out.println(avg);
+}
 //8.
 public int f8(int[] arr)
 {
