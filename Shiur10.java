@@ -47,3 +47,18 @@ public int f8(int[] arr)
         }
         return -1;
 }
+//9. כתוב פונקציה המקבלת מערך מחרוזות ותו כלשהו, הפונקציה תחזיר כמה פעמים התו נמצא במערך
+public int f9(String[] arr,char letter)
+{
+        int count=0;
+        int i,j;
+        for(i=0;i<arr.length;i++)
+        {
+            for(j=0;j<arr[i].length();j++)
+            {
+                if(arr[i].charAt(j)==letter)
+                    count++;
+            }
+        }
+        return count;
+}
