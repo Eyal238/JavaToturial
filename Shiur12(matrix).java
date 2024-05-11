@@ -83,23 +83,29 @@ public void f3(int rows,int columns)
         }
 }
 //  .כתוב פונקציה המקבלת מטריצה מטיפוס תווים ובנוסף מחרוזת, הפונקציה תחזיר תשובה בוליאנית האם המחרוזת נמצאת באחת משורות המטריצה
-public boolean ifFound(char[][] arr,String name)
-{
-        int i,j;
-        int index=0;
-        if(name.length()>arr.length)
+public boolean ifFound(char[][] arr, String name)
+    {
+        int i, j,k,index;
+        int row=arr.length;
+        int cols=arr[0].length;
+        int len=name.length();
+        if (len > cols)
             return false;
-        for(i=0;i<arr.length;i++)
+        for (i = 0; i < row; i++)
         {
-            for(j=0;j<arr[i].length;j++)
+            for(j=0;j<cols;j++)
             {
-                if((arr[i][j]==name.charAt(index)))
-                    index++;
-                else
-                    index=0;
-                if(index==name.length()-1)
+                index=0;
+                for(k=j;k<(j+len);k++)
+                {
+                    if(k==cols)
+                        break;
+                    if(arr[i][k]==name.charAt(index))
+                       index++;
+                }
+                if(index==len)
                     return true;
             }
         }
         return false;
-}
+    }
